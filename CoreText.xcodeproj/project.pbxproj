@@ -21,6 +21,8 @@
 		ABF38F24199DCF5D005195DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF38F06199DCF5D005195DA /* UIKit.framework */; };
 		ABF38F2C199DCF5D005195DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABF38F2A199DCF5D005195DA /* InfoPlist.strings */; };
 		ABF38F2E199DCF5D005195DA /* CoreTextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF38F2D199DCF5D005195DA /* CoreTextTests.m */; };
+		ABF38F39199DCF79005195DA /* CoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF38F38199DCF79005195DA /* CoreTextView.m */; };
+		ABF38F3B199DD5AE005195DA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF38F3A199DD5AE005195DA /* CoreText.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		ABF38F29199DCF5D005195DA /* CoreTextTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreTextTests-Info.plist"; sourceTree = "<group>"; };
 		ABF38F2B199DCF5D005195DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ABF38F2D199DCF5D005195DA /* CoreTextTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreTextTests.m; sourceTree = "<group>"; };
+		ABF38F37199DCF79005195DA /* CoreTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextView.h; sourceTree = "<group>"; };
+		ABF38F38199DCF79005195DA /* CoreTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextView.m; sourceTree = "<group>"; };
+		ABF38F3A199DD5AE005195DA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABF38F3B199DD5AE005195DA /* CoreText.framework in Frameworks */,
 				ABF38F05199DCF5D005195DA /* CoreGraphics.framework in Frameworks */,
 				ABF38F07199DCF5D005195DA /* UIKit.framework in Frameworks */,
 				ABF38F03199DCF5D005195DA /* Foundation.framework in Frameworks */,
@@ -101,6 +107,7 @@
 		ABF38F01199DCF5D005195DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ABF38F3A199DD5AE005195DA /* CoreText.framework */,
 				ABF38F02199DCF5D005195DA /* Foundation.framework */,
 				ABF38F04199DCF5D005195DA /* CoreGraphics.framework */,
 				ABF38F06199DCF5D005195DA /* UIKit.framework */,
@@ -119,6 +126,8 @@
 				ABF38F18199DCF5D005195DA /* ViewController.m */,
 				ABF38F1A199DCF5D005195DA /* Images.xcassets */,
 				ABF38F09199DCF5D005195DA /* Supporting Files */,
+				ABF38F37199DCF79005195DA /* CoreTextView.h */,
+				ABF38F38199DCF79005195DA /* CoreTextView.m */,
 			);
 			path = CoreText;
 			sourceTree = "<group>";
@@ -251,6 +260,7 @@
 			files = (
 				ABF38F19199DCF5D005195DA /* ViewController.m in Sources */,
 				ABF38F13199DCF5D005195DA /* AppDelegate.m in Sources */,
+				ABF38F39199DCF79005195DA /* CoreTextView.m in Sources */,
 				ABF38F0F199DCF5D005195DA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

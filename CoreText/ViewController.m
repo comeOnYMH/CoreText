@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "CoreTextView.h"
 @interface ViewController ()
 
 @end
@@ -16,6 +16,9 @@
 
 - (void)viewDidLoad
 {
+    
+    CoreTextView *coreTextView = [[CoreTextView alloc] initWithFrame:CGRectMake(50, 100, 200, 200)];
+    [self.view addSubview:coreTextView];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
